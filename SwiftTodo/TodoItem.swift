@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 public class TodoItem: NSManagedObject, Identifiable {
-    @NSManaged public var createdAt: Data?
+    @NSManaged public var createdAt: Date?
     @NSManaged public var title: String?
 }
 

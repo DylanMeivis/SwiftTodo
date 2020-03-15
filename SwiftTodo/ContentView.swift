@@ -14,7 +14,34 @@ struct ContentView: View {
     @State private var newTodoItem = ""
     
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List {
+                Section(header: Text("Whats next?")) {
+                    HStack {
+                        TextField("New Item", text: self.$newTodoItem)
+                        Button(action: {
+                            let toDoItem = TodoItem(context: self.managedObjectContext)
+                            toDoItem.title = self.newTodoItem
+                            toDoItem.createdAt = Date()
+                            
+                            do {
+                                try self.managedObjectContext.save()
+                            } catch {
+                                print(error)
+                            }
+                            
+                            self.newTodoItem = ""
+                        }) {
+                            Image(systemName: "plus.circle.fill")
+                                .foregroundColor(.green)
+                                .imageScale(.large)
+                        }
+                    }
+                }.font(.headline)
+            }
+            .navigationBarTitle(("My List"))
+            .navigationBarItems(trailing: EditButton())
+        }
     }
 }
 
