@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9364E16241ED6F100AE36C6 /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364E15241ED6F100AE36C6 /* ToDoItemView.swift */; };
 		F9D63CD2241D0F4B00740439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D63CD1241D0F4B00740439 /* AppDelegate.swift */; };
 		F9D63CD4241D0F4B00740439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D63CD3241D0F4B00740439 /* SceneDelegate.swift */; };
 		F9D63CD7241D0F4B00740439 /* SwiftTodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9D63CD5241D0F4B00740439 /* SwiftTodo.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9364E15241ED6F100AE36C6 /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
 		F9D63CCE241D0F4B00740439 /* SwiftTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D63CD1241D0F4B00740439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D63CD3241D0F4B00740439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F9D63CD1241D0F4B00740439 /* AppDelegate.swift */,
 				F9D63CD3241D0F4B00740439 /* SceneDelegate.swift */,
 				F9D63CD8241D0F4B00740439 /* ContentView.swift */,
+				F9364E15241ED6F100AE36C6 /* ToDoItemView.swift */,
 				F9D63CE8241D130A00740439 /* TodoItem.swift */,
 				F9D63CDA241D0F4C00740439 /* Assets.xcassets */,
 				F9D63CDF241D0F4C00740439 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D63CE9241D130A00740439 /* TodoItem.swift in Sources */,
+				F9364E16241ED6F100AE36C6 /* ToDoItemView.swift in Sources */,
 				F9D63CD2241D0F4B00740439 /* AppDelegate.swift in Sources */,
 				F9D63CD4241D0F4B00740439 /* SceneDelegate.swift in Sources */,
 				F9D63CD9241D0F4B00740439 /* ContentView.swift in Sources */,

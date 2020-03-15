@@ -38,6 +38,11 @@ struct ContentView: View {
                         }
                     }
                 }.font(.headline)
+                Section(header: Text("To Do's")) {
+                    ForEach(self.toDoItems) {todoItem in
+                        ToDoItemView(title: todoItem.title!, createdAt: "\(todoItem.createdAt!)")
+                    }
+                }
             }
             .navigationBarTitle(("My List"))
             .navigationBarItems(trailing: EditButton())
